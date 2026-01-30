@@ -6,12 +6,24 @@
     <title>Space game</title>
 </head>
 <body>
+    <script>
+    const parent = {
+        value : 2,
+
+        method(){
+            return this.method + 1;
+        },
+    };
+
+    console.log(parent.method());
+    console.log("hello world    ")
+    </script>
     <p>Image to use:</p>
     <p>Canvas</p>
 
     <canvas id = "myCanvas" width="40%" height="40%" style="border:1px solid #d3d3d3;">
         Your browser does not support the html5 canvas</canvas>
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
 </body>
 </html>
 
