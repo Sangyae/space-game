@@ -1,4 +1,4 @@
-// @ts-check
+//  @ts-check  // @ts-ignore - to ignore type checking errors 
 class EventEmitter {
   constructor() {
     this.listeners = {};
@@ -350,7 +350,7 @@ function displayMessage(message, color = "red") {
 
 function createMonsters(monsterImg) {
   // 98 * 5     canvas.width - (98*5 /2)
-  const MONSTER_TOTAL = 5;
+  const MONSTER_TOTAL = 6;
   const MONSTER_WIDTH = MONSTER_TOTAL * 98;
   const START_X = (canvas.width - MONSTER_WIDTH) / 2;
   const STOP_X = START_X + MONSTER_WIDTH;
@@ -452,7 +452,7 @@ window.onload = async () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "black";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
-  displayMessage("Press [Enter] to start the game Captain Pew Pew", "blue");
+  displayMessage("Press [Enter] to start the game Captain Pew Pew", "orange");
 
   // CHECK  draw 5 * 5 monsters
   // CHECK move monsters down 1 step per 0.5 second
